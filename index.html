@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="js/jquery3.4.1.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/road.js"></script>
+    <script src="js/changeSetting.js"></script>
+    <script src="js/setting.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.js"></script>
+    <title>我真是嗨到不行了</title>
+	
+	<!-- <audio src="jojo.mp3" autoplay="true" playcount="-1"></audio> -->
+</head>
+<body>
+    <div class="background-wrap">
+        <div class="road">
+            <div id="row-one" class="row" index="1"></div>
+            <div id="row-two" class="row" index="2"></div>
+            <div id="row-three" class="row" index="3"></div>
+            <div id="row-four" class="row" index="4"></div>
+        </div>
+        <div class="screen-wrap">
+            <div id="screen-one" class="screen">
+                <div class="screen-outline"></div>
+            </div>
+            <div id="screen-two" class="screen">
+                <div class="screen-outline"></div>
+            </div>
+            <div id="screen-three" class="screen">
+                <div class="screen-outline"></div>
+            </div>
+            <div id="screen-four" class="screen">
+                <div class="screen-outline"></div>
+            </div>
+        </div>
+        <div class="line-top"></div>
+        <div class="line-bottom"></div>
+        <div class="start"><span>Game Start</span></div>
+        <div class="countdown"></div>
+    </div>
+    <div class="score-wrap">
+        <span class="txt">Score :</span>
+        <span class="score">0</span>
+    </div>
+    <div class="endtime-wrap">
+        <span id="endTime-minute">0</span>
+        <span>:</span>
+        <span id="endTime-second">00</span>
+    </div>
+    <div class="stop-game">
+        <span>Exit</span>
+    </div>
+    <div class="setting-wrap">
+        <img src="img/setting.png" alt="">
+    </div>
+	<div class="giff">
+		<img src="img/gif.png" alt="">
+	</div>
+	<div class="giff1">
+		<img src="img/gif.png" alt="">
+	</div>
+    <div class="setting-nav">
+        <div class="setting-nav-wrap">
+            <!-- <div class="setting-time">
+                <span>game time</span>
+                <input id="minutes" type="number" autocomplete="off" name="minutes" placeholder="03">
+                <span>:</span>
+                <input id="seconds" type="number" autocomplete="off" name="second" placeholder="00">
+                <span class="error-msg">min 2 max 5</span>
+            </div> -->
+            <div class="setting-dificult">
+                <div class="dificult-select"><span>Song Select</span></div>
+                <div id="dificult-easy" class="dificult select" speed="22" max-create="600" min-create="400" song="0"><span>miku2</span></div>
+                <div id="dificult-normal" class="dificult" speed="22" max-create="600" min-create="500" song="1"><span>JOJO</span></div>
+                <div id="dificult-difficult" class="dificult" speed="21" max-create="600" min-create="400" song="2"><span>miku</span></div>
+                <div id="dificult-devil" class="dificult" speed="19" max-create="600" min-create="500" song="3"><span>OW</span></div>
+            </div>
+            <div class="setting-save">
+                <button id="save">
+                    <span>Save</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
